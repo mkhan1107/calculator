@@ -1,0 +1,239 @@
+* {box-sizing: border-box;}
+
+div {
+  border-radius: 25px;
+}
+
+body {
+
+  background-color: #F5F1E1;
+}
+
+p {
+  color: white;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
+
+.number,.operator {
+  margin: 6px;
+  transition: filter 0.2s ease;
+}
+
+.number:hover,.operator:hover {
+  filter: brightness(90%);
+}
+
+.number:active,.operator:active {
+  filter: brightness(70%); 
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh; 
+  }
+
+.display-screen {
+  height: 150px;
+  background-color: #ebeaea;
+  grid-area: display-screen;
+  margin-bottom: 30px;
+}
+
+.centered-div {
+    width: 500px; 
+    height: 700px; 
+    background-color: #006BB6;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px; 
+    display: grid;
+    grid-template-areas:
+    "display-screen display-screen display-screen display-screen"
+    "all-clear delete . ."
+    "seven eight nine division"
+    "four five six multiplication"
+    "one two three subtraction"
+    "zero decimal equals addition";
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(6, 1fr);
+  
+  }
+
+.number {
+    background-color: #999ca0;
+    
+
+}
+
+.operator {
+    background-color: #F58426;
+}
+
+.all-clear {
+  grid-area: all-clear;
+  background: rgb(150, 3, 3);
+  margin: 6px;
+}
+
+.all-clear:hover,.operator:hover {
+  filter: brightness(90%);
+}
+
+.all-clear:active,.operator:active {
+  filter: brightness(70%); 
+}
+
+
+.delete {
+  grid-area: delete;
+  background: #A3B18C;;
+  margin: 6px;
+
+}
+
+.delete:hover,.operator:hover {
+  filter: brightness(90%);
+}
+
+.delete:active,.operator:active {
+  filter: brightness(70%); 
+}
+
+.seven{
+  grid-area: seven;
+
+
+
+}
+
+.eight {
+  grid-area: eight;
+
+
+
+}
+
+.nine {
+  grid-area: nine;
+
+
+
+}
+
+.division {
+  grid-area: division;
+
+
+
+}
+
+.four {
+  grid-area: four;
+
+
+
+}
+
+
+.five {
+  grid-area: five;
+
+
+
+
+}
+
+.six {
+  grid-area: six;
+
+
+
+
+}
+
+.multiplication {
+  grid-area: multiplication;
+
+
+
+}
+
+.one {
+  grid-area: one;
+
+
+
+
+}
+
+
+.two {
+  grid-area: two;
+
+
+
+
+}
+
+
+.three {
+  grid-area: three;
+  
+
+
+
+
+}
+
+
+.subtraction {
+  grid-area: subtraction;
+
+
+
+
+}
+
+.zero {
+  grid-area: zero;
+
+
+
+
+}
+
+.decimal {
+  grid-area: decimal;
+  background-color: #999ca0;
+  margin: 6px;
+}
+
+.decimal:hover,.operator:hover {
+  filter: brightness(90%);
+}
+
+.decimal:active,.operator:active {
+  filter: brightness(70%); 
+}
+
+.equals {
+  grid-area: equals;
+
+
+
+
+
+}
+
+.addition {
+  grid-area: addition;
+
+  
+
+}
